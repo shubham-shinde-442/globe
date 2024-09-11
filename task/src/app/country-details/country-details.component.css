@@ -1,0 +1,82 @@
+.detail {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+}
+
+.fcol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.scol {
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.full-image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.intense-shadow {
+    box-shadow: 0 15px 40px rgba(111, 103, 103, 0.8), 0 6px 9px rgba(125, 118, 118, 0.5);
+}
+
+.back {
+    margin: 15px 0 40px 120px;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bodys {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.label {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.value {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.card-title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+}
+
+.custom-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-bottom {
+    box-shadow: 0 4px 6px -1px rgba(156, 163, 175, 0.5), 0 2px 4px -1px rgba(156, 163, 175, 0.1);
+}

@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.card-body {
+    text-align: start;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.text-left {
+    margin-left: 0;
+}
+
+.bar {
+    margin: 40px;
+}
+
+.bodys {
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.label {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+.value {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+
+.search {
+    border: solid 1px black;
+    width: 450px;
+    border-radius: 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.search input {
+    flex: 1;
+}
+
+.shadow-bottom {
+    box-shadow: 0 4px 6px -1px rgba(156, 163, 175, 0.5), 0 2px 4px -1px rgba(156, 163, 175, 0.1);
+}
+
+@media (max-width: 375px) {
+    .card-title {
+        font-weight: 800;
+        font-size: 1.25rem;
+    }
+
+    .text-left {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .card img {
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1441px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
